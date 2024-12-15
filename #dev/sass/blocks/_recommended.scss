@@ -1,0 +1,30 @@
+.recommended {
+  position: relative;
+  .container{
+    position: relative;
+  }
+
+  .recommended-swiper {
+    padding: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: -48px;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: -48px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 70px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #828282;
+  }
+}

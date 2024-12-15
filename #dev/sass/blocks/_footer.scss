@@ -1,0 +1,112 @@
+.footer {
+  background-color: #000000;
+  padding-top: 74px;
+  padding-bottom: 43px;
+  color: #fff;
+
+  &__wrapper {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/footer/footer-logo.svg");
+      background-repeat: no-repeat;
+      bottom: 138px;
+      right: 119px;
+      width: 155px;
+      height: 176px;
+    }
+  }
+
+  &__logo {
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      text-transform: uppercase;
+      margin-top: 24px;
+    }
+  }
+
+  &__pages {
+    p {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+      margin-bottom: 19px;
+      text-transform: uppercase;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      li {
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          transition: 0.3s ease;
+          &:hover {
+            color: #cd0200;
+          }
+        }
+      }
+    }
+  }
+
+  &__media {
+    p {
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+      text-transform: uppercase;
+    }
+
+    &-icons {
+      display: flex;
+    }
+
+    .media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #727272;
+      width: 55px;
+      height: 55px;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: #fff;
+        svg {
+          path {
+            fill: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 14px;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}

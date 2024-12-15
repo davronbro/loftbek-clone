@@ -1,0 +1,80 @@
+.reviews {
+  background-color: #191817;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/LK.svg");
+    background-repeat: no-repeat;
+    right: 60px;
+    top: 3px;
+    width: 257px;
+    height: 292px;
+  }
+  &__wrapper {
+    h2 {
+      padding-top: 116px;
+      padding-bottom: 114px;
+      font-weight: 600;
+      font-size: 55px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  &__info{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__user-info{
+    p{
+      font-weight: 600;
+      font-size: 16px;
+    }
+    span{
+      font-weight: 400;
+      font-size: 14px;
+      color: #828282;
+    }
+  }
+
+  &__cards{
+    background-color: #fff;
+    max-width: 968px;
+    margin: 0 auto 24px;
+    padding: 47px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    p{
+      max-width: 596px;
+    }
+  }
+
+  &__card-context{
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__button{
+    margin-top: 16px;
+    padding-bottom: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      font-weight: 500;
+      font-size: 22px;
+      text-align: center;
+      border: 1px solid #fff;
+      padding: 19px 34px;
+      color: #fff;
+    }
+  }
+}

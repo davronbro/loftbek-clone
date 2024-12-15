@@ -1,0 +1,75 @@
+.partners{
+  background-color: #191817;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/LK.svg");
+    background-repeat: no-repeat;
+    right: 60px;
+    top: 3px;
+    width: 257px;
+    height: 292px;
+  }
+
+
+  &__wrapper{
+    h2{
+      padding-top: 116px;
+      padding-bottom: 114px;
+      font-weight: 600;
+      font-size: 55px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+  
+  }
+  .row{
+    padding-bottom: 60px;
+  }
+
+  &__offer{
+    padding-bottom: 144px;
+  }
+  &__offer-wrapper{
+    background-image: url('../img/partner-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 488px;
+    display: flex;
+    flex-direction: column;
+    padding: 85px 0 183px 56px;
+    
+    p{
+      max-width: 808px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: #fff;
+      margin-top: 30px;
+      margin-bottom: 37px;
+    }
+    h3{
+      font-weight: 600;
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    a{
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      background-color: #fff;
+      color: #000;
+      width: 243px;
+      height: 59px;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+
+  }
+}

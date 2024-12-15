@@ -1,0 +1,264 @@
+@media (max-width: 992px) {
+  .video-review__wrapper .videoblog__cards {
+    margin-bottom: 20px;
+  }
+  .video-review__wrapper h2 {
+    font-size: 45px;
+    padding: 60px 0;
+  }
+  .reviews__wrapper h2{
+    font-size: 45px;
+    padding: 60px 0;
+  }
+  .reviews__cards{
+    padding: 20px;
+  }
+  .project-review .projects__cards {
+    margin-bottom: 20px;
+  }
+  .project-review__wrapper h2 {
+    font-size: 45px;
+    padding: 60px 0;
+  }
+  .project-page__content {
+    padding: 20px;
+  }
+  .project-page__title h2 {
+    font-size: 45px;
+  }
+
+  .blog-page__content {
+    padding: 20px;
+  }
+
+  .blog-page__title h2 {
+    font-size: 45px;
+  }
+
+  .partners {
+    &::after {
+      content: none;
+    }
+    &__wrapper h2 {
+      font-size: 45px;
+      padding: 60px 0;
+    }
+  }
+  .hero {
+    .swiper-slide {
+      height: 390px;
+      h3 {
+        left: 17px;
+        font-size: 32px;
+      }
+    }
+  }
+  .products {
+    &__categories {
+      h2 {
+        font-size: 30px;
+        left: 15px;
+      }
+    }
+  }
+
+  .popular-products {
+    &__cards {
+      .product-image {
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 17px;
+        height: 40px;
+      }
+      span {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+    .purchase_btn {
+      padding: 8px;
+      font-size: 18px;
+    }
+  }
+
+  .discounts {
+    &__cards {
+      .product-image {
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 17px;
+        height: 40px;
+      }
+      span {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+    .purchase_btn {
+      padding: 8px;
+      font-size: 18px;
+    }
+  }
+
+  .services {
+    &__card {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .clients {
+    .more_btn a {
+      padding: 19px 25px;
+    }
+  }
+
+  .testimonials {
+    .more_btn a {
+      padding: 19px 25px;
+    }
+  }
+  .videoblog {
+    padding: 62px 0;
+    &__wrapper {
+      h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+    }
+    &__cards {
+      a {
+        width: 100%;
+      }
+      p {
+        margin-top: 25px;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    .more_btn {
+      margin-top: 15px;
+      a {
+        padding: 19px 25px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .projects {
+    &__wrapper {
+      h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+    }
+    &__cards {
+      a {
+        width: 100%;
+      }
+      p {
+        margin-top: 25px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        height: 45px;
+      }
+    }
+    .more_btn {
+      margin-top: 15px;
+      a {
+        padding: 19px 25px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer {
+    &__pages {
+      margin-top: 50px;
+    }
+    &__media {
+      margin-top: 50px;
+    }
+    .footer__wrapper::after {
+      content: none;
+    }
+
+    .footer__info {
+      .footer__copyrights {
+        order: 2;
+        margin-top: 24px;
+      }
+      .footer__company {
+        order: 1;
+      }
+    }
+  }
+
+  .chairs {
+    &__product-descr {
+      h3 {
+        font-size: 17px;
+        height: 40px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 9px;
+      }
+      span {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .category-tabs {
+    &__wrapper {
+      ul {
+        justify-content: start;
+        padding-left: 5px;
+        flex-wrap: wrap;
+        gap: 16px;
+        li {
+          a {
+            border: 1px solid black;
+            padding: 5px 11px;
+          }
+        }
+      }
+    }
+  }
+
+  .detail-page {
+    &__product_description {
+      h4 {
+        margin-bottom: 14px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px){
+  .reviews__cards{
+    flex-direction: column;
+  }
+  .reviews__info{
+    margin-bottom: 20px;
+  }
+  .reviews__card-context{
+    p{
+      max-width: 100%;
+    }
+  }
+}

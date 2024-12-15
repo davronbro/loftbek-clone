@@ -1,0 +1,36 @@
+.clients {
+  padding-top: 113px;
+  padding-bottom: 113px;
+  background-color: #191817;
+  margin-top: 147px;
+  &__title {
+    h2 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 62px;
+    }
+  }
+
+  &__cards {
+    height: 152px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    padding: 0 15px;
+    img {
+      filter: brightness(0) invert(1);
+      transition: 0.5s ease;
+    }
+    &:hover {
+      background-color: #fff;
+      img {
+        filter: brightness(1) invert(0);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "core/default";
+@import "base/font";
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/products';
+@import 'blocks/popular-products';
+@import 'blocks/components';
+@import 'blocks/services';
+@import 'blocks/discounts';
+@import 'blocks/clients';
+@import 'blocks/testimonials';
+@import 'blocks/offers';
+@import 'blocks/videoblog';
+@import 'blocks/projects';
+@import 'blocks/questions';
+@import 'blocks/category-tabs';
+@import 'blocks/chairs';
+@import 'blocks/_questions-white';
+@import 'blocks/_detail-page';
+@import 'blocks/recommended';
+@import 'blocks/contacts';
+@import 'blocks/partners';
+@import 'blocks/video-review';
+@import 'blocks/project-review';
+@import 'blocks/reviews';
+@import 'blocks/blog-page';
+@import 'blocks/project-page';
+
+@import 'blocks/footer';
+
+
+
+
+@import 'adaptive/xl';
+@import 'adaptive/lg';
+@import 'adaptive/md';
+@import 'adaptive/sm';
+@import 'adaptive/xs';

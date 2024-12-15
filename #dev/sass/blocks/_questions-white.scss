@@ -1,0 +1,53 @@
+.questions-white{
+  .questions{
+    background-color: #fff;
+    &::before{
+      background-image: url('../img/qwhite/q-white.svg');
+    }
+    &::after{
+      background-image: url('../img/qwhite/q-white2.svg');
+    }
+
+  }
+  .questions__btn a {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 160px;       /* Adjust the button size if needed */
+    height: 160px;
+    text-align: center;
+    border-radius: 50%; /* Makes the button circular */
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;               /* Center vertically */
+        left: 50%;              /* Center horizontally */
+        width: 0;               /* Start with no width */
+        height: 0;              /* Start with no height */
+        background-color: rgba(128, 128, 128, 0.8);
+        border-radius: 50%;     /* Keep the overlay circular */
+        transform: translate(-50%, -50%); /* Center from top-left corner */
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out; /* Smooth scaling transition */
+        z-index: 0;             /* Ensure it sits below the content */
+    }
+
+    &:hover::before, 
+    &:focus::before {
+        width: 200%;   
+        height: 200%;
+    }
+
+    /* Ensures the SVG icon or text appears above the ::before overlay */
+    svg, span {
+        position: relative;
+        z-index: 1;   /* Puts the content above the ::before overlay */
+    }
+
+    svg path {
+        fill: #fff;   /* Ensures the SVG path is white */
+    }
+}
+
+}

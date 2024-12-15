@@ -1,0 +1,124 @@
+@media (max-width: 500px) {
+  .clients {
+    &__cards {
+      height: 125px;
+    }
+    .more_btn {
+      a {
+        padding: 15px 19px;
+        font-size: 15px;
+      }
+    }
+  }
+  .testimonials {
+    .more_btn a {
+      padding: 15px 19px;
+      font-size: 15px;
+    }
+  }
+
+  .videoblog {
+    .more_btn {
+      a {
+        padding: 15px 19px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .projects {
+    .more_btn {
+      a {
+        padding: 15px 19px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .footer {
+    &__pages {
+      p {
+        margin-bottom: 7px;
+      }
+    }
+    &__media {
+      p {
+        margin-bottom: 7px;
+      }
+    }
+  }
+
+  .chairs{
+    &__image{
+      img{
+        margin-bottom: 12px;
+      }
+    }
+    &__product-descr{
+      h3{
+        font-size: 14px;
+        height: 33px;
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 9px;
+      }
+      span{
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .category-tabs{
+    &__wrapper{
+      ul{
+        padding: 10px 10px 10px 0px;
+        li{
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .chairs{
+    &__wrapper{
+      margin-bottom: 100px;
+    }
+  }
+
+  .detail-page{
+    &__media{
+      margin-top: 40px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 25px;
+    }
+    &__product_example{
+      p{
+        width: 100px;
+        height: 100px;
+        padding: 0;
+      }
+    }
+  }
+
+  .contacts{
+    &__cards{
+      margin-bottom: 60px ;
+      padding: 35px 52px 34px 18px;
+    }
+    &__wrapper{
+      h2{
+        margin: 63px 0 40px;
+      }
+    }
+    &__info{
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.videoblog {
+  background-color: #191817;
+  padding: 86px 0;
+  &__wrapper {
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 62px;
+      font-weight: 600;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+  }
+  &__cards{
+    p {
+      color: #fff;
+      margin-top: 36px;
+      font-weight: 600;
+      font-size: 22px;
+      text-transform: uppercase;
+      height: 48px;
+      overflow: hidden;
+    }
+  }
+
+  .more_btn{
+    margin-top: 50px;
+  }
+}

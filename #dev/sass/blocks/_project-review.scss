@@ -1,0 +1,28 @@
+.project-review{
+  background-color: #191817;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/LK.svg");
+    background-repeat: no-repeat;
+    right: 60px;
+    top: 3px;
+    width: 257px;
+    height: 292px;
+  }
+  &__wrapper{
+    h2{
+      padding-top: 116px;
+      padding-bottom: 114px;
+      font-weight: 600;
+      font-size: 55px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .projects__cards{
+    margin-bottom: 91px;
+  }
+}
