@@ -30,4 +30,11 @@
       color: #000;
     }
   }
+  .aos-animate{
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  [data-aos][data-aos][data-aos-duration="1500"]{
+    transition-duration: 1.5s;
+  }
 }

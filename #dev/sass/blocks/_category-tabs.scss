@@ -3,7 +3,7 @@
   &__wrapper {
     ul {
       display: flex;
-      gap: 30px;
+      gap: 10px;
       align-items: center;
       justify-content: center;
       padding: 25px;
@@ -12,6 +12,7 @@
           font-weight: 500;
           font-size: 16px;
           transition: 0.3s ease;
+          padding: 5px 18px;
 
           &.active {
             background-color: #000;

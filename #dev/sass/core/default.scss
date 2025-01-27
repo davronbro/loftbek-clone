@@ -9,7 +9,11 @@ body {
   margin: 0 auto;
   font-family: 'Hoves';
   font-weight: 400;
+  &.open{
+    overflow-y: hidden;
+  }
 }
+
 
 .container{
   max-width: 1200px;

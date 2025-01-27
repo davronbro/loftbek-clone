@@ -1,53 +1,100 @@
-.questions-white{
-  .questions{
-    background-color: #fff;
-    &::before{
-      background-image: url('../img/qwhite/q-white.svg');
-    }
-    &::after{
-      background-image: url('../img/qwhite/q-white2.svg');
-    }
-
-  }
-  .questions__btn a {
-    background-color: #000;
-    color: #fff;
+.questions-white {
+  .questions {
     position: relative;
+    padding: 245px 0 100px;
     overflow: hidden;
-    width: 160px;       /* Adjust the button size if needed */
+    display: block;
+  }
+  
+  .questions.black-background {
+    background-color: #fff;
+  }
+  
+  .questions.black-background:hover .questions-text {
+    color: #828282 !important;
+    opacity: 1;
+  }
+  
+  .questions-btn svg {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .questions:hover .questions-btn svg path {
+    fill: #fff;
+  }
+  
+  .questions-btn {
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
     height: 160px;
-    text-align: center;
-    border-radius: 50%; /* Makes the button circular */
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 50%;               /* Center vertically */
-        left: 50%;              /* Center horizontally */
-        width: 0;               /* Start with no width */
-        height: 0;              /* Start with no height */
-        background-color: rgba(128, 128, 128, 0.8);
-        border-radius: 50%;     /* Keep the overlay circular */
-        transform: translate(-50%, -50%); /* Center from top-left corner */
-        transition: width 0.4s ease-in-out, height 0.4s ease-in-out; /* Smooth scaling transition */
-        z-index: 0;             /* Ensure it sits below the content */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    background-color: #000;
+    svg{
+      path{
+        fill: white;
+      }
     }
-
-    &:hover::before, 
-    &:focus::before {
-        width: 200%;   
-        height: 200%;
+    
+  }
+  
+  .questions-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background: #828282;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .questions:hover .questions-btn::before {
+    width: 101%;
+    height: 101%;
+  }
+  
+  .questions-text {
+    font-family: "Next-Art";
+    font-weight: 700;
+    font-size: 118px;
+    line-height: 188px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #828282;
+    opacity: 0.1;
+    margin-right: 77px;
+    transition: 0.3s;
+  }
+  
+  .questions-inner {
+    display: flex;
+    position: absolute;
+    bottom: 18%;
+    animation: scroll linear infinite 40s;
+    width: 4000px;
+    transition: animation-play-state ease 0.3s;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(-5%);
     }
-
-    /* Ensures the SVG icon or text appears above the ::before overlay */
-    svg, span {
-        position: relative;
-        z-index: 1;   /* Puts the content above the ::before overlay */
+    100% {
+      transform: translateX(-100%);
     }
-
-    svg path {
-        fill: #fff;   /* Ensures the SVG path is white */
-    }
-}
-
+  }
+  
 }
